@@ -1,3 +1,107 @@
-body {
-    background-color: white;
+/*
+#FF1493 Rosa Profundo
+#F5FFFA Creme Branco
+#A020F0 Roxo
+#000000 Preto
+#DAA520 Dolrado
+#E0FFFF Ciano Celeste
+#EE82EE Violeta
+#808080 Cinza
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #FF1493;
+    color: #F5FFFA;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #F5FFFA;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.banner {
+    background: url(../img/banneroficial.webp) no-repeat center/cover;
+    height: 1500px;
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    color: #F5FFFA;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+@media (max-width:675px){
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
