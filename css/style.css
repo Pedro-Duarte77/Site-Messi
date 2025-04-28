@@ -33,6 +33,10 @@ header {
     z-index: 1000;
 }
 
+.logo-img{
+    width: 25%;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -54,11 +58,6 @@ header .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: bold;
 }
 
 .banner {
