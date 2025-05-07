@@ -73,6 +73,10 @@ header .container {
     text-shadow: 2px 2px 5px #000000;
 }
 
+section{
+    scroll-margin-top: 90px;
+}
+
 #sobre{
     padding: 35px;
 }
@@ -151,6 +155,10 @@ header .container {
 
     .banner{
         margin-top: 160px;
+    }
+
+    section{
+        scroll-margin-top: 180px;
     }
 }
 
