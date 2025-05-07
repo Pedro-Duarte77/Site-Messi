@@ -81,7 +81,7 @@ section{
     padding: 35px;
 }
 
-.sobre-container{
+.sobre-container, .saiba-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ section{
     margin: auto;
 }
 
-.sobre-texto{
+.sobre-texto, .saiba-texto{
     flex: 1;
     padding: 20px;
 }
@@ -100,15 +100,16 @@ section{
     margin-bottom: 20px;
 }
 
-.sobre-texto p{
+.sobre-texto p, .saiba-texto p{
     font-size: 1;
     margin-bottom: 20px;
     text-align: justify;
     margin-top: 10px;
 }
 
-.sobre-texto h2{
+.sobre-texto h2, .saiba-texto h2{
     margin-top: 15px;
+    text-align: center;
 }
 
 .sobre-texto a{
@@ -142,7 +143,7 @@ section{
     object-fit: cover;
 }
 
-@media (max-width:675px){
+@media (max-width:850px){
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
