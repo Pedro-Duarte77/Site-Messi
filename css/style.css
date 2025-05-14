@@ -143,7 +143,7 @@ section{
     object-fit: cover;
 }
 
-@media (max-width:850px){
+@media (max-width: 850px){
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
@@ -159,7 +159,7 @@ section{
     }
 
     section{
-        scroll-margin-top: 180px;
+        scroll-margin-top: 200px;
     }
 }
 
