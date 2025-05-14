@@ -143,6 +143,51 @@ section{
     object-fit: cover;
 }
 
+#saiba h1{
+    text-align: center;
+}
+
+#saiba .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#saiba .item{
+    background-color: #F5FFFA;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#saiba .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#saiba .item:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#saiba .item p{
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #4d3f72;
+}
+
+#saiba .imagem img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 850px){
     header .container, .sobre-container{
         flex-direction: column;
