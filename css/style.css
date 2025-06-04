@@ -13,8 +13,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Alegreya", serif;
     scroll-behavior: smooth;
+}
+
+
+.alegreya-uniquifier{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .container {
@@ -109,7 +117,6 @@ section{
 
 .sobre-texto h2, .saiba-texto h2{
     margin-top: 15px;
-    text-align: center;
 }
 
 .sobre-texto a{
@@ -189,7 +196,7 @@ section{
 }
 
 .card{
-    background: #F5FFFA;
+    background: floralwhite;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -218,6 +225,7 @@ section{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
