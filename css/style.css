@@ -265,17 +265,21 @@ section{
     margin-left: 5%;
 }
 
-.galeria-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    flex: 1;
+.galeria-container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.galeria-container h3{
+.img-galeria {
     text-align: center;
 }
+
+.img-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;}
 
 @media (max-width: 850px){
     header .container, .sobre-container{
@@ -302,6 +306,14 @@ section{
 
     .modal-content{
         max-height: 60vh;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-galeria{
+        flex-direction: column;
     }
 
 }
