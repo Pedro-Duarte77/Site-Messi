@@ -281,6 +281,30 @@ section{
     height: auto;
     border-radius: 8px;}
 
+#galeria h1{
+    text-align: center;
+}
+
+#galeria .img-galeria{
+    background-color: #F5FFFA;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#galeria .img-galeria:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#galeria .img-galeria:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 @media (max-width: 850px){
     header .container, .sobre-container{
         flex-direction: column;
