@@ -305,7 +305,7 @@ section{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 850px){
+@media (max-width: 890px){
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
