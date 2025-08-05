@@ -229,6 +229,7 @@ section{
     text-decoration: none;
     border-radius: 6px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .modal{
@@ -314,6 +315,57 @@ section{
 #galeria .img-galeria:active{
     transform: scale(0.98);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.centralizar{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.formulario-contato {
+    background-color: #E0FFFF;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    color: #4d3f72;
+  }
+  
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  
+.grupo-form input[type="checkbox"],
+.grupo-form input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 0;
+  }
+  
+.grupo-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+.footer{
+    text-align: center;
+    background-color: #FF1493;
+    padding: 20px;
 }
 
 @media (max-width: 890px){

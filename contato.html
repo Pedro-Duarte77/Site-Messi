@@ -32,15 +32,79 @@
     </section>
     <main>
         <section id="contato">
-            <div class="sobre-container">
-                <h1>Contato</h1>
-
-            </div>               
+            <div class="container">
+                <h1 class="centralizar">Contato</h1>
+                <form class="formulario-contato" action="https://formsubmit.co/profcintiapinho@gmail.com" method="post">
+                    <div class="grupo-form">
+                      <label for="nome">Nome completo:</label>
+                      <input type="text" placeholder="Nome" name="nome" required>
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="email">E-mail:</label>
+                      <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="idade">Idade:</label>
+                      <input type="number" placeholder="Idade" id="idade" name="idade" min="10" max="120">
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="data">Data da consulta:</label>
+                      <input type="date" placeholder="Data" name="data">
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="area">Qual área de IA você mais tem interesse?</label>
+                      <select id="area" name="area">
+                        <option value="ml">Machine Learning</option>
+                        <option value="cv">Visão Computacional</option>
+                        <option value="pln">Processamento de Linguagem Natural</option>
+                        <option value="generativa">IA Generativa</option>
+                      </select>
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label>Grau de interesse:</label>
+                      <input type="range" min="0" max="100" name="interesse">
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label>Gênero:</label>
+                      <input type="radio" name="genero" value="feminino"> Feminino
+                      <input type="radio" name="genero" value="masculino"> Masculino
+                      <input type="radio" name="genero" value="outro"> Outro
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label>Quais dessas você já usou?</label>
+                      <input type="checkbox" name="uso[]" value="chatgpt"> ChatGPT
+                      <input type="checkbox" name="uso[]" value="dalle"> DALL·E
+                      <input type="checkbox" name="uso[]" value="midjourney"> Midjourney
+                      <input type="checkbox" name="uso[]" value="bard"> Gemini (Bard)
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="cor">Escolha sua cor preferida de interface:</label>
+                      <input type="color" id="cor" name="cor">
+                    </div>
+              
+                    <div class="grupo-form">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </div>
+              
+                    <div class="grupo-form centraliza">
+                      <button type="submit" class="btn">Enviar</button>
+                      <input type="hidden" name="_captcha" value="false">                     
+                    </div>
+                </form>
+            </div>             
         </section> 
     </main> 
-    <footer>
+    <footer class="footer">
     <p> 2025 - Criado por Pedro Henrique - Todos os Direitos Reservados</p>
     </footer>
-
 </body>
 </html>
