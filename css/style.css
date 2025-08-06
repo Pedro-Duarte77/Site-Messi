@@ -291,7 +291,8 @@ section{
 .img-galeria img {
     width: 100%;
     height: auto;
-    border-radius: 8px;}
+    border-radius: 8px;
+}
 
 #galeria h1{
     text-align: center;
@@ -368,7 +369,7 @@ section{
     padding: 20px;
 }
 
-@media (max-width: 890px){
+@media (max-width: 905px){
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
@@ -392,7 +393,7 @@ section{
     }
 
     .modal{
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .modal-content{
