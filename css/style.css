@@ -323,7 +323,6 @@ section{
     margin-top: 10px;
 }
 
-
 .formulario-contato {
     background-color: #E0FFFF;
     padding: 30px;
@@ -375,7 +374,7 @@ body.paginamensagem main {
 
 .mensagem{
   margin-top: 10%;
-  background-color: rgb(127, 197, 255);
+  background-color: #E0FFFF;
 }
 
 .footer{
