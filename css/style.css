@@ -361,7 +361,22 @@ section{
 .grupo-form label {
     margin-bottom: 5px;
     font-weight: bold;
-  }
+}
+
+body.paginamensagem {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.paginamensagem main {
+  flex: 1;
+}
+
+.mensagem{
+  margin-top: 10%;
+  background-color: rgb(127, 197, 255);
+}
 
 .footer{
     text-align: center;
