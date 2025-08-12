@@ -366,15 +366,11 @@ body.paginamensagem {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #E0FFFF;
 }
 
 body.paginamensagem main {
   flex: 1;
-}
-
-.mensagem{
-  margin-top: 10%;
-  background-color: #E0FFFF;
 }
 
 .footer{
