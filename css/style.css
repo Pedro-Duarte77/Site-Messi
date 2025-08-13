@@ -368,6 +368,35 @@ section{
     font-weight: bold;
 }
 
+.tabela-container {
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.tabela-messi {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Alegreya", serif;
+    color: #000000;
+}
+
+.tabela-messi thead th {
+    background: #007bff;
+    color: #E0FFFF;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.tabela-messi td, .tabela-ia th {
+    padding: 12px;
+    text-align: center;
+}
+
 .footer{
     text-align: center;
     background-color: #FF1493;
@@ -413,6 +442,22 @@ section{
         flex-direction: column;
     }
 
+    .tabela-container {
+        width: 100%;
+        overflow-x: hidden; 
+    }
+
+    .tabela-messi {
+        width: 100%;
+        table-layout: fixed; 
+        word-wrap: break-word; 
+    }
+
+    .tabela-messi th, .tabela-messi td {
+       padding: 6px;
+       font-size: 12px;
+       text-align: center;
+    }
 }
 
 
