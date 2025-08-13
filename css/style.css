@@ -323,12 +323,6 @@ section{
     margin-top: 10px;
 }
 
-.container-envio{
-    border-radius: 2px solid black;
-    padding: 20px;
-    align-items: center;
-}
-
 .formulario-contato {
     background-color: #E0FFFF;
     padding: 30px;
@@ -366,17 +360,6 @@ section{
 .grupo-form label {
     margin-bottom: 5px;
     font-weight: bold;
-}
-
-body.paginamensagem {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #E0FFFF;
-}
-
-body.paginamensagem main {
-  flex: 1;
 }
 
 .footer{
