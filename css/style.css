@@ -320,7 +320,13 @@ section{
 
 .centralizar{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.paragrafo{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #007bff;
 }
 
 .formulario-contato {
