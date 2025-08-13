@@ -323,9 +323,10 @@ section{
     margin-top: 10px;
 }
 
-.centralizartxt{
-    margin-top: 10%;
-    background-color: #007bff;
+.container-envio{
+    border-radius: 2px solid black;
+    padding: 20px;
+    align-items: center;
 }
 
 .formulario-contato {
