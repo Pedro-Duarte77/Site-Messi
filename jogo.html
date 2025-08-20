@@ -11,9 +11,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <footer class="footer">
-    <p> 2025 - Criado por Pedro Henrique - Todos os Direitos Reservados</p>
-    </footer>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img class="logo-img" src="img/logomessi.png" alt="Logo oficial de Messi">
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="index.html#sobre">Sobre</a></li>
+                  <li><a href="index.html#saiba">Saiba Mais</a></li>
+                  <li><a href="index.html#galeria">Galeria de Fotos</a></li>
+                  <li><a href="jogo.html">Brinque</a></li>
+                  <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>              
+        </div>
+    </header>
+<main class="mainjogo">
+  <section id="jogo">
+    <h1 class="centraliza">⚽ Jogo – Títulos do Messi</h1>
+    <p class="centraliza">Arraste cada título para o ano em que foi conquistado.</p>
+
+    <div class="jogo-container">
+      <div class="dropzone topleft" data-zone="2009">
+        <h3>🏆 2009</h3>
+      </div>
+      <div class="dropzone topright" data-zone="2015">
+        <h3>🏆 2015</h3>
+      </div>
+      <div class="dropzone bottomleft" data-zone="2021">
+        <h3>🏆 2021</h3>
+      </div>
+      <div class="dropzone bottomright" data-zone="2022">
+        <h3>🏆 2022</h3>
+      </div>
+    </div>
+
+    <div class="tray">
+      <!-- 2009 -->
+      <div class="item" id="p1" draggable="true" data-answers="2009">Champions League</div>
+      <div class="item" id="p2" draggable="true" data-answers="2009">Bola de Ouro</div>
+
+      <!-- 2015 -->
+      <div class="item" id="p3" draggable="true" data-answers="2015">Champions League</div>
+      <div class="item" id="p4" draggable="true" data-answers="2015">Mundial de Clubes</div>
+
+      <!-- 2021 -->
+      <div class="item" id="p5" draggable="true" data-answers="2021">Copa América</div>
+      <div class="item" id="p6" draggable="true" data-answers="2021">Melhor do Mundo</div>
+
+      <!-- 2022 -->
+      <div class="item" id="p7" draggable="true" data-answers="2022">Copa do Mundo</div>
+      <div class="item" id="p8" draggable="true" data-answers="2022">Laureus Sports Award</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p> 2025 - Criado por Pedro Henrique - Todos os Direitos Reservados</p>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('.item');
+  const zones = document.querySelectorAll('.dropzone');
+
+  items.forEach(it => {
+    it.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', it.id);
+      setTimeout(() => it.classList.add('dragging'), 0);
+    });
+    it.addEventListener('dragend', () => it.classList.remove('dragging'));
+  });
+
+  zones.forEach(z => {
+    z.addEventListener('dragover', e => e.preventDefault());
+    z.addEventListener('dragenter', () => z.classList.add('over'));
+    z.addEventListener('dragleave', () => z.classList.remove('over'));
+
+    z.addEventListener('drop', e => {
+      e.preventDefault();
+      z.classList.remove('over');
+
+      const id = e.dataTransfer.getData('text/plain');
+      const piece = document.getElementById(id);
+      const allowed = (piece.dataset.answers || '').split(',').map(s => s.trim());
+      const zoneKey = z.dataset.zone;
+
+      if (allowed.includes(zoneKey)) {
+        z.appendChild(piece);
+        piece.classList.add('ok');
+        piece.setAttribute('draggable','false');
+        piece.style.cursor = 'default';
+      } else {
+        piece.classList.add('nope');
+        setTimeout(() => piece.classList.remove('nope'), 350);
+      }
+    });
+  });
+</script>
 </body>
 </html>
