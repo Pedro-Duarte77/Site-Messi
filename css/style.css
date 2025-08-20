@@ -372,9 +372,14 @@ section{
     width: 90%;
     margin: 30px auto;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border-radius: 12px;
 }
+
+.tabela-container table {
+    min-width: 700px; 
+  }
 
 .tabela-messi {
     width: 100%;
@@ -442,22 +447,6 @@ section{
         flex-direction: column;
     }
 
-    .tabela-container {
-        width: 100%;
-        overflow-x: hidden; 
-    }
-
-    .tabela-messi {
-        width: 100%;
-        table-layout: fixed; 
-        word-wrap: break-word; 
-    }
-
-    .tabela-messi th, .tabela-messi td {
-       padding: 6px;
-       font-size: 12px;
-       text-align: center;
-    }
 }
 
 
