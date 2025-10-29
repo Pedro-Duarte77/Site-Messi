@@ -1,0 +1,609 @@
+/*
+#FF1493 Rosa Profundo
+#F5FFFA Creme Branco
+#A020F0 Roxo
+#000000 Preto
+#DAA520 Dolrado
+#E0FFFF Ciano Celeste
+#EE82EE Violeta
+#808080 Cinza
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya", serif;
+    scroll-behavior: smooth;
+}
+
+
+.alegreya-uniquifier{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #FF1493;
+    color: #F5FFFA;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo-img{
+    width: 15%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #F5FFFA;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner {
+    background: url(../img/banneroficial.webp) no-repeat center/cover;
+    height: 1500px;
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    color: #F5FFFA;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.banner-contato{
+    background: url(../img/messi2.webp) no-repeat center/cover;
+    height: 500px;
+    display: flex; 
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    color: #F5FFFA;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+section{
+    scroll-margin-top: 90px;
+}
+
+#sobre{
+    padding: 35px;
+}
+
+.sobre-container, .saiba-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.sobre-texto, .saiba-texto{
+    flex: 1;
+    padding: 20px;
+}
+
+.sobre-texto h1{
+    font-size: 1.5;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p, .saiba-texto p{
+    font-size: 1;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.sobre-texto h2, .saiba-texto h2{
+    margin-top: 15px;
+}
+
+.sobre-texto a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.fonte{
+    font-size: 0.7em;
+}
+
+.hex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+}
+
+.hex{
+    width: 140px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    overflow: hidden;
+    position: relative;
+}
+
+.hex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#saiba h1{
+    text-align: center;
+}
+
+#saiba .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#saiba .item{
+    background-color: #F5FFFA;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#saiba .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#saiba .item:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#saiba .item p{
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #4d3f72;
+}
+
+#saiba .imagem img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card{
+    background: floralwhite;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.card h3{
+    margin-top: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #F5FFFA;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.modal{
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target{
+    display: flex;
+}
+
+.modal-content{
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #F5FFFA;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+}
+
+.close-btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #dc3545;
+    color: #F5FFFA;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.listacard{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.galeria-container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img-galeria {
+    text-align: center;
+}
+
+.img-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#galeria h1{
+    text-align: center;
+}
+
+#galeria .img-galeria{
+    background-color: #F5FFFA;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#galeria .img-galeria:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#galeria .img-galeria:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.centralizar{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 30px;
+}
+
+.paragrafo{
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #007bff;
+}
+
+.formulario-contato {
+    background-color: #E0FFFF;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    color: #000000;
+  }
+  
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  
+.grupo-form input[type="checkbox"],
+.grupo-form input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 0px;
+  }
+  
+.grupo-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tabela-container {
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.tabela-container table {
+    min-width: 700px; 
+  }
+
+.tabela-messi {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Alegreya", serif;
+    color: #000000;
+}
+
+.tabela-messi thead th {
+    background: #007bff;
+    color: #E0FFFF;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.tabela-messi td, .tabela-ia th {
+    padding: 12px;
+    text-align: center;
+}
+
+.mainjogo {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#jogo {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.jogo-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  height: 520px;
+  margin: 24px auto;
+  border: 3px solid #000080;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.dropzone {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  border: 3px dashed #ffcc00;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #111;
+  text-shadow: 1px 1px 2px white;
+  transition: all 0.3s ease;
+}
+
+.dropzone.over {
+  border-color: #28a745;
+  background: rgba(40, 167, 69, 0.4);
+}
+
+.topleft {
+  top: 5%;
+  left: 5%;
+}
+
+.topright {
+  top: 5%;
+  right: 5%;
+}
+
+.bottomleft {
+  bottom: 5%;
+  left: 5%;
+}
+
+.bottomright {
+  bottom: 5%;
+  right: 5%;
+}
+
+.tray {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.item {
+  background: #003366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.item:hover {
+  background: #0055aa;
+}
+
+.item.dragging {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.item.ok {
+  background: #28a745 !important;
+  cursor: default;
+}
+
+.item.nope {
+  background: #dc3545 !important;
+  transform: scale(0.9);
+}
+
+.footer{
+    text-align: center;
+    background-color: #FF1493;
+    padding: 60px;
+    font-size: 20px;
+    color: #E0FFFF;
+}
+
+.footer-2{
+    text-align: center;
+    background-color: #FF1493;
+    padding: 20px;
+    color: #E0FFFF;
+}
+
+.footer-envio{
+    text-align: center;
+    background-color: #FF1493;
+    padding: 20px 0;
+    margin-top: 150px;
+    color: #E0FFFF;
+}
+
+@media (max-width: 905px){
+    header .container, .sobre-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner{
+        margin-top: 160px;
+    }
+
+    .banner-contato{
+        margin-top: 210px;
+    }
+
+    section{
+        scroll-margin-top: 200px;
+    }
+
+    .modal{
+        margin-top: 130px;
+    }
+
+    .modal-content{
+        max-height: 60vh;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .img-galeria{
+        flex-direction: column;
+    }
+
+    .mainjogo {
+      margin-top: 300px;
+    }
+
+}
+
+@media (max-width: 650px){
+    .dropzone{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
